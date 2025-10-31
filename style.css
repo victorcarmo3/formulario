@@ -1,0 +1,75 @@
+:root {
+    font-size: 62.5%;
+}
+  
+body {
+    font-size: 1.6rem;
+    background: oklch(61.572% 0.19319 138.785);
+    color: #ffffff;
+}
+  
+#page {
+    max-width: 120rem;
+    margin-inline: auto;
+}
+  
+header {
+    padding-block: 2rem;
+    text-align: center;
+}
+  
+fieldset {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+  
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+  
+div {
+    margin-bottom: 1rem;
+}
+  
+input {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+  
+input:focus,
+input:hover {
+    outline: 2px solid oklch(61.879% 0.17608 148.682);
+}
+
+input + label {
+    display: inline;
+}
+
+h2 {
+    margin-block: 2rem;
+}
+
+select,
+textarea {
+    padding: 1rem;
+    border-radius: 1rem;
+    resize: none;
+}
+
+button {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background: oklch(52.7% 0.154 150.069);
+    border: none;
+    color: #FFF;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background: oklch(62.7% 0.194 149.214);
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}	

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link rel="shortcut icon" href="./img/GitHub.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page">
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações pessoais</legend>
+
+                <div>
+                    <label for="nome">Nome completo: </label>
+                    <input type="text" placeholder="digite seu Nome" id="nome" required maxlength="12" minlength="4">
+                </div>
+
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <input type="number" placeholder="Digite seu CPF" id="cpf" required min="10000000000">
+                </div>
+
+                <div>
+                    <label for="email">E-MAIL:</label>
+                    <input type="email" placeholder="Digite seu E-MAIL" id="email" required>
+                </div>
+
+                <div>
+                    <label for="key">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" id="key" required>
+                </div>
+
+                <div>
+                    <label for="foto">Foto:</label>
+                    <input type="file" id="foto" accept=".jpg, .png, .jpeg, .jfif" required>
+                </div>
+
+                <div>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" id="data" min="1944-01-01" max="2025-11-01" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gostos pessoais</legend>
+
+                <div>
+                    <label for="cor">Sua cor:</label>
+                    <input type="color" id="cor" required>
+                </div>
+
+                <div class="checkbox-container">
+                    <h2>Escolha seus estilos musicais preferidos:</h2>
+
+                    <div>
+                        <input type="checkbox" id="rap">
+                        <label for="rap">RAP</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="set">
+                        <label for="set">Sertanejo</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="roc">
+                        <label for="roc">Rock</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="jazz">
+                        <label for="jazz">Jazz</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="other">
+                        <label for="other">Outros</label>
+                    </div>
+                </div>
+
+                <div class="radio-container">
+                    <h2>Você prefere doce, ou salgado? ou ambos?</h2>
+
+                    <div>
+                        <input type="radio" id="doce" name="gostos">
+                        <label for="doce">Doce</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="salgado" name="gostos">
+                        <label for="salgado">Salgado</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="ambos" name="gostos">
+                        <label for="aombos">Ambos</label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="tamanho">Selecione seu tamanho de camiseta:</label>
+                    <select name="tamanho" id="tamanho">
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XGG">XGG</option>
+                        <option value="XXGG">XXGG</option>
+                        <option value="none">não tem ai</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="descricao">Faça uma breve descrição sobre você:</label>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Digite aqui..."></textarea>
+                </div>                
+            </fieldset>
+
+            <button>Enviar</button>
+        </form>
+    </main>
