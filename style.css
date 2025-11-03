@@ -3,7 +3,7 @@
 }
   
 body {
-    font-size: 1.6rem;
+    font-size: 1.8rem
     background: oklch(61.572% 0.19319 138.785);
     color: #ffffff;
 }
@@ -20,12 +20,12 @@ header {
   
 fieldset {
     padding: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem
 }
   
 label {
     display: block;
-    margin-bottom: .5rem;
+    margin-bottom: .6rem;
 }
   
 div {
